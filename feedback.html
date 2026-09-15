@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Зворотній зв'язок - Toyota</title>
+</head>
+
+<body>
+
+    <header>
+        <h1><u>Toyota</u></h1>
+
+        <img
+            src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Toyota_carlogo.svg"
+            alt="Логотип Toyota"
+        >
+    </header>
+
+    <main>
+
+        <h2>Зворотній зв'язок</h2>
+
+        <form>
+
+            <fieldset>
+                <legend> <b>Персональна інформація</b></legend>
+
+                <p>
+                    <label for="surname">Прізвище та ім'я:</label>
+                    <input
+                        type="text"
+                        id="surname"
+                        name="surname"
+                        placeholder="Введіть прізвище та ім'я"
+                    >
+                </p>
+
+                <p>
+                    <label for="email">E-mail:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="example@gmail.com"
+                    >
+                </p>
+
+                <p>
+                    <label for="age">Вік:</label>
+                    <input
+                        type="number"
+                        id="age"
+                        name="age"
+                        min="1"
+                        max="120"
+                    >
+                </p>
+
+                <p>
+                    <label for="education">Освіта:</label>
+
+                    <select id="education" name="education">
+                        <option value="повна">Повна</option>
+                        <option value="неповна">Неповна</option>
+                        <option value="вища">Вища</option>
+                        <option value="професійна">Професійна</option>
+                    </select>
+                </p>
+
+            </fieldset>
+
+
+
+
+
+            <p>
+                <label for="purpose">Мета зворотнього зв'язку:</label>
+
+                <select id="purpose" name="purpose">
+                    <option value="співпраця">Співпраця</option>
+                    <option value="скарга">Скарга на порушення права власності</option>
+                    <option value="пропозиція">Пропозиція</option>
+                    <option value="помилка">Наявність помилки</option>
+                </select>
+            </p>
+
+
+            <p>
+                <label for="details">Детально:</label>
+            </p>
+
+            <textarea
+                id="details"
+                name="details"
+                rows="5"
+                cols="50"
+                placeholder="Опишіть детально ваше звернення..."
+            ></textarea>
+
+
+            <p>
+                <input
+                    type="checkbox"
+                    id="consent"
+                    name="consent"
+                >
+
+                <label for="consent">
+                    Я погоджуюсь на обробку наданої інформації.
+                </label>
+            </p>
+
+
+            <button type="submit">Відправити</button>
+            <button type="reset">Очистити</button>
+
+        </form>
+
+        <p>
+            <a href="index.html">Повернутися на Головну сторінку</a>
+        </p>
+
+    </main>
+
+</body>
+</html>
