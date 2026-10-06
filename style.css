@@ -1,0 +1,239 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #f2f2f2;
+    color: #222;
+    font-family: Arial, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Georgia, serif;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    background-color: white;
+    color: #e60012;
+    z-index: 10;
+}
+
+header h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 20px;
+}
+
+header img {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 100px;
+}
+
+main {
+    padding-top: 170px;
+}
+
+nav {
+    position: relative;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: hsl(0, 0%, 15%);
+    padding: 15px;
+    z-index: 9;
+}
+
+nav > a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 8px;
+    transition: 0.5s;
+}
+
+nav > a:hover {
+    background-color: white;
+    color: #e60012;
+    transform: scale(1.1);
+}
+
+#about p {
+    line-height: 1.5;
+}
+
+.goal {
+    margin: 20px;
+}
+
+h2::before {
+    content: "★ ";
+}
+
+h2::after {
+    content: " ★";
+}
+
+#about p::first-letter {
+    font-size: 24px;
+}
+
+#about {
+    margin: 20px;
+    height: 500px;
+    overflow: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    transition: transform 0.5s;
+}
+
+table:hover {
+    transform: scale(1.05);
+}
+
+th,
+td {
+    border: 1px solid #222;
+    padding: 10px;
+}
+
+aside {
+    float: right;
+    width: 30%;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgb(230, 230, 230);
+}
+
+.contacts {
+    text-shadow: none;
+    transition: text-shadow 0s linear 2s;
+}
+
+.contacts:hover {
+    text-shadow: 2px 2px 5px black;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 3px;
+    z-index: 5;
+}
+
+main > ol {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+
+main > ol > li {
+    padding: 20px;
+    border: 4px double darkorange;
+    border-right: 4px solid darkorange;
+
+     align-self: stretch;
+    justify-self: stretch;
+}
+
+
+main > ol > li > img {
+    width: 300px;
+    filter: saturate(100%);
+    transition: filter 1s;
+}
+
+main > ol > li > p:last-child {
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+main > ol > li > img:focus {
+    filter: saturate(200%);
+}
+
+a:active {
+    color: darkgreen;
+}
+
+.feedback-page form {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.feedback-page fieldset {
+    order: 2;
+    flex-grow: 1;
+    flex-shrink: 1;
+    align-self: center;
+    padding: 20px;
+}
+
+.feedback-page input,
+.feedback-page select,
+.feedback-page textarea {
+    padding: 8px;
+}
+
+header img {
+    animation-name: logo;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes logo {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(+10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 700px) {
+    main > ol {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav > a {
+        margin: 5px;
+    }
+}

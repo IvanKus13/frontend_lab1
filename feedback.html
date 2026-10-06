@@ -3,10 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
     <title>Зворотній зв'язок - Toyota</title>
 </head>
 
-<body>
+<body class="feedback-page">
 
     <header>
         <h1><u>Toyota</u></h1>
@@ -57,7 +58,27 @@
                     >
                 </p>
 
-                <p>
+                
+                    <label for="gender">Стать:</label>
+
+                    <input
+                        type="radio"
+                        id="male"
+                        name="gender"
+                        value="чоловіча"
+                    >
+                    <label for="male">Чоловіча</label>
+
+                    <input
+                        type="radio"
+                        id="female"
+                        name="gender"
+                        value="жіноча"
+                    >
+                    <label for="female">Жіноча</label>
+                
+
+                
                     <label for="education">Освіта:</label>
 
                     <select id="education" name="education">
@@ -66,7 +87,7 @@
                         <option value="вища">Вища</option>
                         <option value="професійна">Професійна</option>
                     </select>
-                </p>
+                
 
             </fieldset>
 
