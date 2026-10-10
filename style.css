@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
 }
@@ -75,10 +76,6 @@ nav > a:hover {
     line-height: 1.5;
 }
 
-.goal {
-    margin: 20px;
-}
-
 h2::before {
     content: "★ ";
 }
@@ -121,15 +118,6 @@ aside {
     background-color: rgb(230, 230, 230);
 }
 
-.contacts {
-    text-shadow: none;
-    transition: text-shadow 0s linear 2s;
-}
-
-.contacts:hover {
-    text-shadow: 2px 2px 5px black;
-}
-
 footer {
     position: relative;
     bottom: 0;
@@ -148,16 +136,13 @@ main > ol {
     gap: 20px;
 }
 
-
 main > ol > li {
     padding: 20px;
     border: 4px double darkorange;
     border-right: 4px solid darkorange;
-
-     align-self: stretch;
+    align-self: stretch;
     justify-self: stretch;
 }
-
 
 main > ol > li > img {
     width: 300px;
