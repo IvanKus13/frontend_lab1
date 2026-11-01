@@ -25,7 +25,7 @@
         <form>
 
             <fieldset>
-                <legend> <b>Персональна інформація</b></legend>
+                <legend><b>Персональна інформація</b></legend>
 
                 <p>
                     <label for="surname">Прізвище та ім'я:</label>
@@ -58,42 +58,36 @@
                     >
                 </p>
 
-                
-                    <label for="gender">Стать:</label>
+                <label for="gender">Стать:</label>
 
-                    <input
-                        type="radio"
-                        id="male"
-                        name="gender"
-                        value="чоловіча"
-                    >
-                    <label for="male">Чоловіча</label>
+                <input
+                    type="radio"
+                    id="male"
+                    name="gender"
+                    value="чоловіча"
+                >
+                <label for="male">Чоловіча</label>
 
-                    <input
-                        type="radio"
-                        id="female"
-                        name="gender"
-                        value="жіноча"
-                    >
-                    <label for="female">Жіноча</label>
-                
+                <input
+                    type="radio"
+                    id="female"
+                    name="gender"
+                    value="жіноча"
+                >
+                <label for="female">Жіноча</label>
 
-                
-                    <label for="education">Освіта:</label>
+                <br><br>
 
-                    <select id="education" name="education">
-                        <option value="повна">Повна</option>
-                        <option value="неповна">Неповна</option>
-                        <option value="вища">Вища</option>
-                        <option value="професійна">Професійна</option>
-                    </select>
-                
+                <label for="education">Освіта:</label>
+
+                <select id="education" name="education">
+                    <option value="повна">Повна</option>
+                    <option value="неповна">Неповна</option>
+                    <option value="вища">Вища</option>
+                    <option value="професійна">Професійна</option>
+                </select>
 
             </fieldset>
-
-
-
-
 
             <p>
                 <label for="purpose">Мета зворотнього зв'язку:</label>
@@ -106,19 +100,24 @@
                 </select>
             </p>
 
-
             <p>
-                <label for="details">Детально:</label>
-            </p>
+    <label for="details">Детально:</label>
+</p>
 
-            <textarea
-                id="details"
-                name="details"
-                rows="5"
-                cols="50"
-                placeholder="Опишіть детально ваше звернення..."
-            ></textarea>
+<div class="details-container">
+    <textarea
+        id="details"
+        name="details"
+        rows="5"
+        cols="50"
+        placeholder="Опишіть детально ваше звернення..."
+    ></textarea>
 
+    <span id="tooltip">
+        Дякуючи Вам, ми стаємо кращі!
+        Конкретизуйте мету звернення, будь ласка
+    </span>
+</div>
 
             <p>
                 <input
@@ -132,7 +131,6 @@
                 </label>
             </p>
 
-
             <button type="submit">Відправити</button>
             <button type="reset">Очистити</button>
 
@@ -143,6 +141,6 @@
         </p>
 
     </main>
-
+<script src="feedback.js"></script>
 </body>
 </html>
